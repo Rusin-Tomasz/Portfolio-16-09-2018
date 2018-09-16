@@ -1,0 +1,49 @@
+#technology {
+    display: flex;
+    flex-wrap: wrap;
+    .technology-header-wrapper {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0,0.9)),  url(../../assets/displayed-blue-light-code.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        h2 {
+            font-size: 3rem;
+            letter-spacing: 4px;
+            color: white;
+            margin: 10rem 0;
+            padding-left: 8rem;
+        }
+    }
+    .technology-content,
+    .tools-content {
+        width: 50%;
+        padding: 10rem;
+        color: white;
+        h3 {
+            font-weight: $font-semibold;
+            font-size: 3rem;
+            padding: 0 10rem;
+            letter-spacing: 2px;
+        }
+        ul {
+            margin: 0;
+            padding: 5rem 10rem;
+            li {
+                font-size: $size-xlarge;
+                padding: 2rem 0;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .technology-content {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../assets/multitasking.jpg);
+        background-size: cover;
+        background-position: center;
+        color: black;
+    }
+    .tools-content {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../assets/laptop-in-night-room.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}

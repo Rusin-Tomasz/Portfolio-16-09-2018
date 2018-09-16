@@ -1,0 +1,318 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", Arial;
+  font-weight: 400;
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Montserrat", Arial; }
+
+.font-semibold {
+  font-weight: 600; }
+
+.font-bold {
+  font-weight: 700; }
+
+.underline {
+  position: relative; }
+  .underline::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 5%;
+    bottom: -5px;
+    background-color: #1b375e; }
+  .underline.white::before {
+    background-color: white; }
+
+#main-navigation {
+  background-color: black;
+  z-index: 999999999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px; }
+  #main-navigation .navigation-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    #main-navigation .navigation-list .list-item a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 80px;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-weight: 600;
+      font-family: "Montserrat", Arial;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
+      #main-navigation .navigation-list .list-item a:hover {
+        color: rgba(255, 255, 255, 0.8); }
+
+#header {
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+  #header .header-wrapper {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0))), url("../../assets/main-background.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("../../assets/main-background.jpg");
+    background-position: bottom;
+    background-size: cover;
+    -webkit-animation: slideZoom 36s linear infinite;
+            animation: slideZoom 36s linear infinite;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  #header .header-content {
+    position: absolute;
+    color: white;
+    bottom: 15%;
+    left: 15%;
+    text-transform: uppercase; }
+    #header .header-content p, #header .header-content h1, #header .header-content a {
+      margin: 3rem 0;
+      opacity: 0; }
+    #header .header-content h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      letter-spacing: 15px;
+      position: relative;
+      display: inline-block;
+      -webkit-animation: fadeIn 1.5s linear;
+              animation: fadeIn 1.5s linear;
+      -webkit-animation-delay: 0s;
+              animation-delay: 0s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+      #header .header-content h1::after, #header .header-content h1::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: white;
+        left: 0;
+        opacity: 0;
+        -webkit-animation: fadeIn 1s linear;
+                animation: fadeIn 1s linear;
+        -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      #header .header-content h1::after {
+        bottom: -10px; }
+      #header .header-content h1::before {
+        bottom: -20px; }
+    #header .header-content p {
+      font-size: 4.5rem;
+      letter-spacing: 7px;
+      font-weight: 300;
+      font-family: "Montserrat", Arial;
+      -webkit-animation: fadeIn 1.5s linear;
+              animation: fadeIn 1.5s linear;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    #header .header-content a {
+      font-size: 3rem;
+      font-family: "Montserrat", Arial;
+      font-weight: 600;
+      letter-spacing: 10px;
+      border: 2px solid white;
+      padding: 1rem 5rem;
+      display: inline-block;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      position: relative;
+      -webkit-animation: showUp 1s linear;
+              animation: showUp 1s linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-delay: 2s;
+              animation-delay: 2s;
+      bottom: 0;
+      cursor: pointer; }
+      #header .header-content a:hover {
+        background-color: white;
+        color: black; }
+
+@-webkit-keyframes slideZoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes slideZoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes showUp {
+  0% {
+    bottom: -300px;
+    opacity: 0; }
+  100% {
+    bottom: 0;
+    opacity: 1; } }
+
+@keyframes showUp {
+  0% {
+    bottom: -300px;
+    opacity: 0; }
+  100% {
+    bottom: 0;
+    opacity: 1; } }
+
+#about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #about-me .about-me-content {
+    width: 40%;
+    padding: 10rem;
+    line-height: 3.4rem;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", Arial;
+    text-align: justify;
+    font-weight: 300;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #about-me .about-me-content .content-wrapper h2 {
+      letter-spacing: 2px; }
+    #about-me .about-me-content .content-wrapper a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Montserrat", Arial;
+      color: black;
+      font-weight: 600;
+      border: solid 1px black;
+      padding: 1rem 4rem;
+      letter-spacing: 5px;
+      display: inline-block;
+      margin-top: 2rem;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
+      #about-me .about-me-content .content-wrapper a:hover {
+        background-color: black;
+        color: white; }
+  #about-me .image-holder {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.4))), url("../../assets/comp-bg.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../assets/comp-bg.jpg");
+    background-size: cover;
+    height: 700px;
+    width: 60%; }
+
+#technology {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #technology .technology-header-wrapper {
+    background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0.9))), url(../../assets/displayed-blue-light-code.jpg);
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.9)), url(../../assets/displayed-blue-light-code.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%; }
+    #technology .technology-header-wrapper h2 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      color: white;
+      margin: 10rem 0;
+      padding-left: 8rem; }
+  #technology .technology-content,
+  #technology .tools-content {
+    width: 50%;
+    padding: 10rem;
+    color: white; }
+    #technology .technology-content h3,
+    #technology .tools-content h3 {
+      font-weight: 600;
+      font-size: 3rem;
+      padding: 0 10rem;
+      letter-spacing: 2px; }
+    #technology .technology-content ul,
+    #technology .tools-content ul {
+      margin: 0;
+      padding: 5rem 10rem; }
+      #technology .technology-content ul li,
+      #technology .tools-content ul li {
+        font-size: 22px;
+        padding: 2rem 0;
+        letter-spacing: 1px; }
+  #technology .technology-content {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../../assets/multitasking.jpg);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../assets/multitasking.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black; }
+  #technology .tools-content {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url(../../assets/laptop-in-night-room.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../assets/laptop-in-night-room.jpg);
+    background-size: cover;
+    background-position: center; }
+
+#portfolio .technology-header-wrapper .project-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #portfolio .technology-header-wrapper .project-wrapper .content,
+  #portfolio .technology-header-wrapper .project-wrapper .img-holder {
+    width: 50%; }
+  #portfolio .technology-header-wrapper .project-wrapper .content {
+    padding: 10rem; }
+    #portfolio .technology-header-wrapper .project-wrapper .content .project-title {
+      font-weight: 600;
+      font-size: 3rem;
+      padding: 0 10rem;
+      letter-spacing: 2px; }

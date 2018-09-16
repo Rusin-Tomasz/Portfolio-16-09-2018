@@ -1,0 +1,28 @@
+#portfolio {
+    .technology-header-wrapper {
+        .project-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            .content,
+            .img-holder {
+                width: 50%;
+            }
+            .content {
+                padding: 10rem;
+                .project-title {
+                    font-weight: $font-semibold;
+                    font-size: 3rem;
+                    padding: 0 10rem;
+                    letter-spacing: 2px;
+ 
+                }
+                .description {
+
+                }
+            }
+            .img-holder {
+
+            }
+        }
+    }
+}

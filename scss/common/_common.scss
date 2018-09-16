@@ -1,0 +1,15 @@
+.underline {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 5%;
+        bottom: -5px;
+        background-color: $blue;
+    }
+    &.white::before {
+        background-color: white;
+    }
+}
+

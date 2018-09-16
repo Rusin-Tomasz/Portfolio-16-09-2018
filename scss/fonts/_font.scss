@@ -1,0 +1,35 @@
+$lato: 'Lato', Arial;
+$montserrat: 'Montserrat', Arial;
+
+$font-normal:   400;
+$font-medium:   500;
+$font-semibold: 600;    
+$font-bold: 700;
+
+$size-small: 12px;
+$size-normal: 14px;
+$size-medium: 16px;
+$size-large: 18px;
+$size-xlarge: 22px;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $lato;
+    font-weight: $font-normal;
+    font-size: $size-normal;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: $montserrat;
+}
+
+.font-semibold {
+    font-weight: $font-semibold;
+}
+
+.font-bold {
+    font-weight: $font-bold;
+}

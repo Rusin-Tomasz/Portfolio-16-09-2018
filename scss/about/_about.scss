@@ -1,0 +1,44 @@
+#about-me {
+    display: flex;
+    .about-me-content {
+        width: 40%;
+        padding: 10rem;
+        line-height: 3.4rem;
+        font-size: $size-large;
+        letter-spacing: 0.5px;
+        font-family: $montserrat;
+        text-align: justify;
+        font-weight: 300;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .content-wrapper {
+            h2 {
+                letter-spacing: 2px;
+            }
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $montserrat;
+                color: black;
+                font-weight: $font-semibold;
+                border: solid 1px black;
+                padding: 1rem 4rem;
+                letter-spacing: 5px;
+                display: inline-block;
+                margin-top: 2rem;
+                transition: all 0.4s;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+    .image-holder{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../assets/comp-bg.jpg");
+        background-size: cover;
+        height: 700px;
+        width: 60%;
+    }
+}
